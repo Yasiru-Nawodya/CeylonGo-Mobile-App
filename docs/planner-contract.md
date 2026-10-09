@@ -84,3 +84,28 @@ Do not present an over-budget itinerary as feasible.
 - Planning developer: rank destinations, schedule visits, and calculate costs.
 - AI assistance is optional and must not override validated costs
   or feasibility checks.
+
+  ## Proposed version 1 planning assumptions
+
+These defaults require team agreement before implementation.
+
+- A trip starts from the selected town and returns there on the final day.
+- Each day runs from 08:00 to 18:00, including travel and visits.
+- Reserve 60 minutes each day for lunch.
+- Schedule visits within each destination's opening hours.
+- Use one private vehicle for the group.
+- Include every travel segment, including travel to accommodation
+  and the final return journey.
+- A trip of N days includes N - 1 overnight stays.
+- Use curated accommodation estimates for the whole group,
+  accounting for traveler count and room capacity.
+- Use curated meal, entrance, vehicle, and accommodation estimates.
+- Every cost record must include its source and last-updated date.
+- Missing required travel or cost data prevents a plan from being
+  marked feasible.
+- Personalization initially uses interest matching to rank destinations.
+- Budget and schedule checks determine feasibility.
+- Optional AI assistance may explain recommendations, but must not
+  change validated costs or schedules.
+- Adding, removing, or reordering stops triggers recalculation
+  of travel times, schedules, and costs.
